@@ -2,12 +2,27 @@
 html,h3,p{font-family: 'Oswald', sans-serif;}
 header{background: #e7e7e7;border-top: solid 5px #808080;height:112px }
 article{margin-top:28px;}
-article p,  article ul{padding-top:20px;}
+article p{padding-top:20px;}
 p{font-family: 'georgia', sans-serif; line-height: 27px}
 h3{color:#3f3f3f;line-height: 27px}
 footer{border-top:1px solid red;}
-.container{width: 969px}
+ul{list-style: none;padding:0;}
+
 #banner{padding-bottom:30px; border-bottom: 1px solid #dddddd}
+
+#what_others_are_saying{font-size: 18px; color:#4a4a4a;line-height: 24px}
+
+
+#what_others_are_saying ul{background:url("../img/what_others_are_saying_bg.gif");height: 389px}
+#what_others_are_saying span{font-size:15px; font-weight:bold; color:#4a4a4a;}
+#what_others_are_saying li {font-style: italic;padding:15px;}
+#what_others_are_saying li:nth-child(even){background: #c2d2de;}
+#this_is_some_content_2 ul{padding-top:20px;}
+.container{max-width: 969px}
+.some_content_1{width:302px;}
+.border{border-top: 1px solid #dddddd}
+/* development test props */
+.borderTest{border:10px solid red; }
 .page_grey_gradiant{
 background: rgb(155,155,155); /* Old browsers */
 /* IE9 SVG, needs conditional override of 'filter' to 'none' */
@@ -19,12 +34,14 @@ background: -o-linear-gradient(top,  rgba(155,155,155,1) 0%,rgba(255,255,255,1) 
 background: -ms-linear-gradient(top,  rgba(155,155,155,1) 0%,rgba(255,255,255,1) 10%); /* IE10+ */
 background: linear-gradient(to bottom,  rgba(155,155,155,1) 0%,rgba(255,255,255,1) 10%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9b9b9b', endColorstr='#ffffff',GradientType=0 ); /* IE6-8 */
-
-
-
 }
 
-.some_content_1{width:302px;}
-.border{border-top: 1px solid #dddddd}
-/* development test props */
-.borderTest{border:10px solid red; }
+
+
+
+
+
+.inner_shadow{
+	-webkit-box-shadow:inset 0 0 8px 1px rgba(0,0,0,.5);
+	box-shadow:inset 0 0 8px 1px rgba(0,0,0,.5);
+}
