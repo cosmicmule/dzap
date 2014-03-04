@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<personList>
+  <person>
+     <message>jQuery: Novice to Ninja</message>
+     <user>Site point</user>
+  </person>
+  <person>
+     <message>Learning jQuery</message>
+     <user>PACKT</user>
+  </person>
+  <person>
+     <message>Head First jQuery</message>
+     <user>O'Reilly</user>
+  </person>
+  <person>
+     <message>jQuery UI 1.8</message>
+     <user>PACKT</user>
+  </person>
+</personList>

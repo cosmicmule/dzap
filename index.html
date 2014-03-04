@@ -2,27 +2,33 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="need to add keywords">
 		<meta name="author" content="Manny C. Da Silva">
 		<title>Welcome to Dzap</title>
-		<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link href="css/default.css" rel="stylesheet">
-		<script src="//http://code.jquery.com/jquery-1.10.2.min.js" ></script>
+		<link href="css/jquery.bxslider.css" rel="stylesheet" />
+		<script src="http://code.jquery.com/jquery-1.10.2.min.js" ></script>
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
 	</head>
 	<body>
-		
 		<!-- Header begins -->
 		<header>
 			<div class="container">
 				<img class="pull-left" src="img/lorem_logo.gif" title="Lorem logo">
 				<nav class="pull-right">
 					<ul>
-						<li>HOME</li>
-						<li>UNO</li>
-						<li>DOS</li>
-						<li>TRES</li>
+						<li><a href="#">HOME</a></li>
+						<li><a href="#">UNO</a></li>
+						<li><a href="#">DOS</a></li>
+						<li><a href="#">TRES</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -32,45 +38,74 @@
 			<div class="container">
 				<!-- row 1 -->
 				<section id="banner" class="row">
-					<img class="img-responsive" src="img/banner_1.jpg" title="banner image number one">
+					<ul class="bxslider">
+					  <li><img src="img/banner_1.jpg" alt="banner image number 1" /></li>
+					  <li><img src="img/banner_1.jpg" alt="banner image number 1" /></li>
+					  <li><img src="img/banner_1.jpg" alt="banner image number 1" /></li>
+					</ul>
 				</section>
 
 				<!-- row 2 -->
 				<section>
 					<div class="row">
 					<article id="this_is_some_content_1" class="col-lg-4 col-sm-6">
-						<h3><strong>This is Some Content</strong></h3>
+						<h3>This is Some Content</h3>
 						<img src="img/some_content_1.jpg">
 						<p class="some_content_1">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. </p>
 					</article>
 					<article id="this_is_some_content_2" class="col-lg-4 col-sm-6">
-						<h3><strong>This is Some Content</strong></h3>
+						<h3>This is Some Content</h3>
 						<img src="img/some_content_2.jpg">
 						<ul>
-							<li>Sed lacinia enim et nisl viverra.</li>
-							<li>Nullam elementum quam in luctus.</li>
-							<li>Integer ac et lacus hendrerit pretium.</li>
-							<li>Donec placerat dui et blandit.</li>
-							<li>Nullam elementum quam in luctus.</li>
+							<li><span class="glyph"></span> Sed lacinia enim et nisl viverra.</li>
+							<li><span class="glyph"></span> Nullam elementum quam in luctus.</li>
+							<li><span class="glyph"></span> Integer ac et lacus hendrerit pretium.</li>
+							<li><span class="glyph"></span> Donec placerat dui et blandit.</li>
+							<li><span class="glyph"></span> Nullam elementum quam in luctus.</li>
 						</ul>
 					</article>
-					<article id="what_others_are_saying" class="col-lg-4 col-sm-8">
-						<h3><strong>What Others are Saying</strong></h3>
-						<ul>
-							<li>“wow this place is super great!”<br/><span>- Some Random Guy</span></li>
-							<li>“the people here are awesome.”<br/><span>- Best Dude</span></li>
-							<li>“best place ever!”<br/><span>- Guy from Escondido</span></li>
-							<li>“woot woot woot!”<br/><span>- Boom Boom</span></li>
-							<li>“Keep up the good work”<br/><span>- Animal and Hawk</span></li>
+					<article id="what_others_are_saying" class="col-lg-4 col-sm-12">
+						<h3>What Others are Saying</h3>
+						<ul id="what_others_are_saying_list">
+							<li>“wow this place is super great!”<br/> <span> - Some Random Guy</span></li>
+							<li>“the people here are awesome.”<br/> <span> - Best Dude</span></li>
+							<li>“best place ever!”<br/> <span> - Guy from Escondido</span></li>
+							<li>“woot woot woot!”<br/> <span> - Boom Boom</span></li>
+							<li>“Keep up the good work”<br/> <span> - Animal and Hawk</span></li>
 						</ul>
 					</article>
 					</div>
 				</section>
-				<footer class="border"><p>© Copyright</p></footer>
+
+				<!-- row 3 -->
+				<section id="contact_us">
+					<div class="row">
+						<div class="col-lg-8 col-sm-8 col-xs-8 copy">
+							<h3>Have Something to Say?</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis urna vestibulum, lobortis lorem id, Quisque ac massa a purus. </p>
+						</div>
+						<form id="contact_us_form" class="col-lg-4 col-sm-4 col-xs-12  " method="post" action="index.html">
+							<input type="text" class="inputfield required" name="" value="Enter Email Here" placeholder="Enter Email Here" />
+							<input class="submit" type="submit" value="Contact_Us" />
+						</form>
+						
+					</div>
+				</section>
+				<footer class="border clearFix">
+					<p class="pull-left">Copyright, All Rights Reserved. Handle It</p>
+					<ul class="pull-right">
+						<li>Home |</li>
+						<li>Uno |</li>
+						<li>Dos |</li>
+						<li>Tres</li>
+					</ul>
+				</footer>
 			</div>
 		</div>
 	
-		<!--<script src="js/app.js"></script>-->
+		<script src="js/app.js"></script>
+		<!-- bxSlider Javascript file -->
+		<script src="js/jquery.bxslider.min.js"></script>
 	</body>
 	
 </html>

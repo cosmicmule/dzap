@@ -1,39 +1,64 @@
 /* html tag styles */
-html,h3,p{font-family: 'Oswald', sans-serif;}
+html,h3,p{font-family: 'Oswald', sans-serif; font-weight: normal;}
 header{background: #e7e7e7;border-top: solid 5px #808080;height:112px }
 article{margin-top:28px;}
-article p{padding-top:20px;}
+article p{padding-top:14px;}
 p{font-family: 'georgia', sans-serif; line-height: 27px}
-h3{color:#3f3f3f;line-height: 27px}
-footer{border-top:1px solid red;}
+h3{color:#3f3f3f;line-height: 27px;letter-spacing: .009em; padding-bottom:5px;font-weight: 600}
+footer{border-top:1px solid red; margin-top:36px; padding-top:21px;}
 ul{list-style: none;padding:0;}
 
-#banner{padding-bottom:30px; border-bottom: 1px solid #dddddd}
+nav{background:  url("../img/nav_bg.jpg")0 0 no-repeat;width: 375px; height: 47px;margin:35px 8px 0 0 }
+nav li,footer li{font-family: 'Oswald', sans-serif; font-size:15px;display: inline;font-weight:normal; }
+nav li a{
+	font-size:18px; 
+	color:#ffffff;
+	padding: 11px 30px;
+	display: block;
+	float: left;
+	overflow: hidden;
+	font-weight: 200; 
+}
+
+nav li a:hover{color:#fad259; text-decoration: none}
+
+#banner{border-bottom: 1px solid #dddddd}
 
 #what_others_are_saying{font-size: 18px; color:#4a4a4a;line-height: 24px}
-
-
-#what_others_are_saying ul{background:url("../img/what_others_are_saying_bg.gif");height: 389px}
+#what_others_are_saying ul{background:url("../img/what_others_are_saying_bg.gif")0 0;height: 389px}
 #what_others_are_saying span{font-size:15px; font-weight:bold; color:#4a4a4a;}
-#what_others_are_saying li {font-style: italic;padding:15px;}
+#what_others_are_saying li {font-style: italic;font-weight:200; padding:15px; line-height: 24px }
 #what_others_are_saying li:nth-child(even){background: #c2d2de;}
-#this_is_some_content_2 ul{padding-top:20px;}
-.container{max-width: 969px}
-.some_content_1{width:302px;}
+
+#this_is_some_content_2 ul{padding-top:14px; line-height: 27px}
+
+#contact_us{background: no-repeat url("../img/contact_us.jpg")0 0; height: 146px;margin:26px 0 0 -15px;width:970px;}
+#contact_us .copy{padding-left:30px;}
+#contact_us form{padding-top:20px;}
+
+.container{max-width: 970px;padding-left:0;}
+.some_content_1{}
 .border{border-top: 1px solid #dddddd}
-/* development test props */
-.borderTest{border:10px solid red; }
-.page_grey_gradiant{
-background: rgb(155,155,155); /* Old browsers */
-/* IE9 SVG, needs conditional override of 'filter' to 'none' */
-background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzliOWI5YiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
-background: -moz-linear-gradient(top,  rgba(155,155,155,1) 0%, rgba(255,255,255,1) 10%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(155,155,155,1)), color-stop(10%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top,  rgba(155,155,155,1) 0%,rgba(255,255,255,1) 10%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top,  rgba(155,155,155,1) 0%,rgba(255,255,255,1) 10%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top,  rgba(155,155,155,1) 0%,rgba(255,255,255,1) 10%); /* IE10+ */
-background: linear-gradient(to bottom,  rgba(155,155,155,1) 0%,rgba(255,255,255,1) 10%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9b9b9b', endColorstr='#ffffff',GradientType=0 ); /* IE6-8 */
+.clear_padding_right{padding-right: 0}
+.clear_padding_left{padding-left: 0}
+.reset_padding_left{padding-left: 8px}
+.page_grey_gradiant{background: url("../img/grey_shadow.jpg") repeat-x; /* Old browsers */}
+
+form .inputfield{
+	width:278px;
+	height:41px;
+	color:#c0c0c0;
+	padding: 10px
+}
+
+form .submit{
+	background: no-repeat url("../img/contact_us_now_btn.png");
+	margin: 10px 20px;
+	text-indent: -9000px; text-transform: capitalize;
+	width:212px;
+	height: 55px;
+	border: 0;
+	float: right
 }
 
 
